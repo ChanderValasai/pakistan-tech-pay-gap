@@ -19,6 +19,8 @@ not include a gender field in its public release — see [Limitations](#limitati
 > statistically controlling for years of coding experience**, using two independent methods 
 > (stratified comparison and OLS regression) that converge on a consistent estimate.
 
+![Median compensation comparison](figures/01_median_comparison.png)
+
 **This does not establish discrimination.** It establishes that the gap is not explained by 
 experience alone. See [Interpretation & Caveats](#interpretation--caveats) below — this distinction 
 is central to the whole analysis, not a footnote.
@@ -48,6 +50,8 @@ notebooks (see [Repository Structure](#repository-structure)) — every cleaning
 choice is explained with its rationale, not just executed silently.
 
 ## Results at a Glance
+
+![Compensation gap by experience band](figures/03_gap_by_experience.png)
 
 | Experience Band | Pakistan Median | Rest-of-World Median | Ratio |
 |---|---|---|---|
