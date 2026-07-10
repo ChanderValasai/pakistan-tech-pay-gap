@@ -99,7 +99,6 @@ claim. "Caused by unfair treatment" is a much larger claim this analysis cannot 
 ## Repository Structure
 pakistan-tech-pay-gap/
 ├── README.md                          # this file
-├── requirements.txt
 ├── data/
 │   ├── raw/                           # not committed — see data/raw/README.md to reproduce
 │   └── processed/                     # cleaned dataset + derivation log
@@ -107,18 +106,20 @@ pakistan-tech-pay-gap/
 │   ├── 01_data_cleaning.ipynb         # inclusion criteria, outlier handling, documented reasoning
 │   ├── 02_eda.ipynb                   # distribution analysis, normality checks
 │   ├── 03_hypothesis_testing.ipynb    # unadjusted tests: t-test, Mann-Whitney, effect size
-│   └── 04_confounder_analysis.ipynb   # stratified comparison + regression (core analysis)
+│   ├── 04_confounder_analysis.ipynb   # stratified comparison + regression (core analysis)
+│   └── 05_visualizations.ipynb        # publication-quality figures for report/README
 ├── reports/
-│   └── pay_equity_report.md           # full findings, business insights, recommendations
-├── figures/                           # exported charts
-└── src/                               # reusable cleaning/viz functions
+│   ├── pay_equity_report.md           # full findings, business insights, recommendations
+│   ├── pay_equity_report.pdf          # exported version, downloadable
+│   └── executive_summary.md           # 1-page non-technical summary
+└── figures/                           # exported charts, referenced in README + report
 
 ## Reproducing This Analysis
 
 1. Download the 2025 Stack Overflow Developer Survey from [insights.stackoverflow.com/survey](https://insights.stackoverflow.com/survey)
 2. Place `survey_results_public.csv` in `data/raw/` (see `data/raw/README.md`)
 3. Install dependencies: `pip install -r requirements.txt`
-4. Run notebooks in order (01 → 04); each saves outputs consumed by the next
+4. Run notebooks in order (01 → 05); each saves outputs consumed by the next
 
 ## Tech Stack
 
