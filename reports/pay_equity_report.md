@@ -67,12 +67,12 @@ observed compensation relative to its true distribution.
 | Pakistan | 112 | $8,428 | $15,413 | $21,977 |
 | Rest of World | 22,924 | $78,000 | $96,384 | $95,240 |
 
-![Median compensation comparison](figures/01_median_comparison.png)
+![Median compensation comparison](../figures/01_median_comparison.png)
 
 Both distributions are heavily right-skewed, confirmed via histogram, boxplot, and Q-Q plot 
 inspection. Variances are highly unequal between groups, ruling out a standard Student's t-test.
 
-![Distribution Shape](figures/02_distibution_shape.png)
+![Distribution Shape](../figures/02_distibution_shape.png)
 
 ### 3.2 Hypothesis Testing
 
